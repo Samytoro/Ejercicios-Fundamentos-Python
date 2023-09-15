@@ -23,7 +23,7 @@ def clear():
     operador=("")
     input_text.set("0")
 
-#Backspace
+#BACKSPACE
 def backspace():
     numLen = len (Salida.get())
     Salida.delete (numLen - 1, 'end')
@@ -48,7 +48,6 @@ Salida.place(x=10,y=60)
 
  
 #AÑADIR BOTONES.
-#CREAMOS NUESTROS BOTONES
 Button(ventana,text="<—",bg=color_boton,width=ancho_boton,height=alto_boton,command=backspace).place(x=17,y=180)
 Button(ventana,text="C",bg=color_boton,width=ancho_boton,height=alto_boton,command=clear).place(x=107,y=180)
 Button(ventana,text="(",bg=color_boton,width=ancho_boton,height=alto_boton,command=lambda:btnClik("(")).place(x=17,y=480)
